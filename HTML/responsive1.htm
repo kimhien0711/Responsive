@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .anh2{
+            display: block;
+        }
+        .anh1, .anh, .anh3, .anh4{
+            display: none;
+        }
+
+        
+        @media screen and (max-width: 960px) {
+            body{
+                background-color: red;
+            }  
+            .color{
+                color: azure;
+                font-size: 20px;
+            }    
+            .img{
+                width: 900px;
+                height: 900px;
+            }
+            .anh{
+                display: block;
+            }
+            .anh1, .anh2, .anh3, .anh4{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 768px){
+            body{
+                background-color: orange;
+            }
+            .color{
+                color: azure;
+                font-size: 20px;
+            }    
+            .img{
+                width: 700px;
+                height: 700px;
+            }
+            .anh1{
+                display: block;
+            }
+            .anh, .anh2, .anh3, .anh4{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 550px){
+            body{
+                background-color: yellow;
+            }
+            .color{
+                color: azure;
+                font-size: 20px;
+            }    
+            .img {
+                width: 500px;
+                height: 500px;
+            }
+            .anh3{
+                display: block;
+            }
+            .anh1, .anh2, .anh, .anh4{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 320px){
+            body{
+                background-color: green;
+            }
+            .color{
+                color: rgb(255, 250, 240);
+                font-size: 20px;
+            }    
+            .img{
+                width: 300px;
+                height: 300px;
+            }
+            .anh4{
+                display: block;
+            }
+            .anh, .anh1, .anh2, .anh3{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="color">Welcome</p>
+    <img src="mayanh2.jpg" class="anh">
+    <img src="logo.png" class="anh1">
+    <img src="mayanh1.jpg" alt="" class="anh2">
+    <img src="mayanh3.jpg" alt="" class="anh3">
+    <img src="banh mi.jpg" alt="" class="anh4">
+</body>
+</html>

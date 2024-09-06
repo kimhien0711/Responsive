@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+    }
+
+    .menu{
+        text-align: left;
+        padding: 10px;   
+    }
+
+    .menu ul li {
+        display: inline;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .menu ul :hover{
+        color: orangered;  
+        text-decoration: underline;
+    }
+
+    .content{
+        display: flex;
+        padding: 20px;
+    }
+
+   .item{
+        width: 100%;
+        padding: 10px; 
+   }
+
+   .item img{
+    width: 100%;
+    height: 50%;
+   }
+
+</style>
+<body>
+    <div id="container">
+        <div class="menu">
+            <ul class="item-menu">
+                <li>Giao tận nơi</li>
+                <li>Deal hôm nay</li>
+                <li>Tất cả</li>
+                <li>Đồ ăn</li>
+                <li>Đồ uống</li>
+                <li>Đồ chay</li>
+                <li>Bánh kem</li>
+                <li>Tráng miệng</li>
+                <li>Xem thêm></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="item">
+                <img src="banh mi.jpg">
+                <h2>Bánh mì</h2>
+                <p>Vincom Center Đồng Khởi, số 72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, Tp. HCM</p>
+            </div>
+            <div class="item">
+                <img src="trà sữa.jpg">
+                <h2>Trà sữa</h2>
+                <p>35 Ngô Đức Kế, Phường Bến Nghé, Quận 1, Tp. HCM</p>
+            </div>
+            <div class="item">
+                <img src="trà.jpg">
+                <h2>Trà</h2>
+                <p>512 Nguyễn Thị Minh Khai, Phường 2, Quận 3, Tp. HCM</p>
+            </div>
+            <div class="item">
+                <img src="cơm.jpg" >
+                <h2>Cơm</h2>
+                <p>79 Sương Nguyệt Ánh, Phường Bến Thành, Quận 1, Tp. HCM</p>
+            </div>          
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            background-color: rgb(156, 230, 46);
+            color: white;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        .img{
+            width: 450px;
+            height: 300px;
+        }
+
+        @media screen and (max-width: 1023px) {
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;      
+            }    
+        }
+        @media screen and (max-width: 767px) {
+            .container{
+                display: grid;
+                grid-template-columns: 1fr;      
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>VTC Academy Fashion Week</h1>
+        <p>Resize this responsive page!</p>
+    </div>
+    <div class="container">
+        <div class="London">
+            <h2>London</h2>
+            <p>London is the captial city of England</p>
+            <p>It is the most populous city in the United Kingdorm, with a metropolitan area of over 13 milion inhabitants.</p>
+            <img class="img" src="https://th.bing.com/th?id=OIP.th4GrtV1gTwQnJFH0jQiCwHaFj&w=288&h=216&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="">
+        </div>
+        <div class="Paris">
+            <h2>Paris</h2>
+            <p>Paris is the captial city of France</p>
+            <p>The Paris area is one of the largest population centers in Europe, with more than 12 milion inharitants.</p>
+            <img class="img" src="https://th.bing.com/th?id=OIP.e_Ru1TiARELmDxAiOA5JJgHaE8&w=306&h=204&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="">
+        </div>
+        <div class="Tokyo">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the captial city of Japan.</p>
+            <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+            <img class="img" src="https://th.bing.com/th?id=OIP.K_EC2oojJWUYLhBaXkT9cgHaFs&w=284&h=219&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="">
+        </div>
+    </div>
+</body>
+</html>

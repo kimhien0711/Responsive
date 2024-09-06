@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #header{
+        background-color: rgb(31, 16, 79);
+    }
+    #header .logo{  
+        color: white;
+        display: flex;
+        
+    }
+    #menu li{
+        display: inline-block;
+        /* position: relative; */
+        text-align: left;
+        background-color: black;
+        display: inline-block;
+        /* color: white; */
+        
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="logo.png" alt="">
+                </a>
+                <h1>THIS IS A HEADING</h1>
+            </div>
+        </div>
+        <div id="menu">
+                <ul class="items-menu">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>New
+                        <ul>
+                            <li>Sub menu</li>
+                            <li>Sub menu</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

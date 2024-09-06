@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi mail đến Phòng Kinh Doanh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #14c676 0%, #217fb9 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .container {
+            font-size: 27px;
+            text-align: center;
+            width: 600px;
+            height: auto;
+        }
+
+        h2{
+            border-bottom: 2px solid white;
+        }
+
+        .both{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 87%;
+            padding: 10px 40px 10px 35px;
+            border: none;
+            border-bottom: 1px solid white;
+            background: transparent;
+            color: white;
+            outline: none;
+        }
+      
+        .form-group i {
+            position: absolute;
+            color: white;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: white;
+        }
+
+        .submit-button:hover {
+            background-color: #306e33;
+        }
+
+        ::placeholder{
+            color: white;      
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="form">
+            <div class="container">
+                <h2>Gửi mail đến Phòng Kinh Doanh</h2>
+                <div class="both">
+                    <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Họ tên*" required>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" placeholder="Di động *" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-pencil-alt"></i>
+                    <input type="text" placeholder="Tiêu đề email">
+                </div>        
+                <div class="form-group">
+                    <i class="fas fa-comment"></i>
+                    <textarea placeholder="Nội dung email..."></textarea>
+            </div>
+            <button type="submit" class="submit-button">GỬI ĐI</button>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

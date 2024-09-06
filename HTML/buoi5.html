@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        .container  {
+            width: 100%;
+            height: auto;
+            background-image: linear-gradient(35deg,rgb(61, 126, 206),rgb(124, 239, 124));
+            justify-items: center;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(68, 123, 68);
+            border-bottom: 2px solid white;
+            
+        }
+
+        h2 {
+            text-align: center;
+            border-bottom: 2px solid;
+        }
+          
+        input, textarea {
+            margin-top: 10px;
+            width: 80%;
+            margin-left: 4px;
+            background:transparent;
+            border: none;
+            outline: none;
+        }
+
+        .container-item {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container-item .item-1 {
+            border-bottom: 1px solid;
+
+        }
+
+        .item-2 {
+            width: 100%;
+            border-bottom: 1px solid;
+        }
+
+        .container .btn-item {
+            height: 70px;
+            border-bottom: 1px solid;
+            display: flex;
+            justify-items: flex-start;
+        }
+
+        .btn-item > .fa {
+            margin-top: 14px;
+        }
+
+        ::placeholder {
+            color: #fff;
+        }
+
+        .send {
+            padding: 10px 20px;
+            margin-left: 170px;
+            background-color: rgb(20, 185, 130);
+            border: none;
+            color: #fff;
+            margin-top: 10px;
+            border-radius: 5px;
+       }
+
+       .send :hover {
+            background-color: #122f14;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <h2>Gửi email đến Phòng Kinh Doanh</h2>
+
+            <div class="container-item">
+                <div class="item-1">
+                    <i class="glyphicon glyphicon-user"></i>
+                    <input type="text" placeholder="Họ tên*"> </input>
+                </div>
+
+                <div class="item-1">
+                    <i class="glyphicon glyphicon-earphone"></i>
+                    <input type="text" placeholder="Di động*"> </i></input>
+                </div>
+            </div>
+    
+            <div class="item-2">
+                <i class="glyphicon glyphicon-envelope"> </i>
+                <input type="email" placeholder="Email"> </input>
+            </div>
+    
+            <div class="item-2">  
+                <i class="glyphicon glyphicon-pencil"></i>
+                <input type="text" placeholder="Tiêu đề email"> </i></input>
+            </div>
+           
+            <div class="btn-item">
+                <i class="fa fa-comment-o" ></i>
+                <textarea type="email" placeholder="Nội dung email..."></textarea>
+            </div>
+            
+            <button class="send">Gửi Đi</button>
+        </div>
+        
+    </form>
+</body>
+</html>

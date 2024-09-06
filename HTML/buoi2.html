@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        .body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 200px 100px 50px 50px 50px;
+            gap: 10px;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .img1 {
+            grid-column-start: 1;
+            grid-column-end: 2 ;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .img2 {
+            grid-column-start: 1;
+            grid-column-end: 2 ;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        .img3 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        .img4 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 5;
+            grid-row-end: 7;
+        }
+        .img5 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 7;
+        }
+        .layout-image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+</style>
+<body>
+    <div class="container">
+        <div class="img1">
+            <p>Khuyến mãi</p>
+            <img src="https://th.bing.com/th/id/R.145e8621363ba956ec3c3909aa15340d?rik=pT0KYn7SY7P5ug&riu=http%3a%2f%2ftranhtuongsaigongiare.com%2fUpload_Files%2ftranh+phong+canh+thien+nhien+30.jpg&ehk=UeAGOcUJdsVy65RQR8iiw8YH1CSdlrPrgOkmWkT2ryY%3d&risl=&pid=ImgRaw&r=0" class="layout-image">
+        </div>
+        <div class="img2">
+            <p>Khuyến mãi</p>
+            <img src="https://th.bing.com/th?id=OIP.Ygbzcvmx92s4HOKkHgiK9AHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" class="layout-image">
+        </div>
+        <div class="img3">
+            <p>Khuyến mãi</p>
+            <img src="https://th.bing.com/th?id=OIP.Xgn-6DF-cYrdFaYJ_OzvSwHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" class="layout-image">
+        </div>
+        <div class="img4">
+            <p>Khuyến mãi</p>
+            <img src="https://th.bing.com/th?id=OIP.GU7rALcQVFnrd9dY76jgpAHaEc&w=322&h=193&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" class="layout-image">
+        </div>
+        <div class="img5">
+            <p>Khuyến mãi</p>
+            <img src="https://th.bing.com/th?id=OIP.6R5XuG3rTZQmidXgkVweFQHaE3&w=308&h=202&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" class="layout-image">
+        </div>
+    </div>
+</body>
+</html>

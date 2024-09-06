@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #1F104F;
+            color: white;
+            padding: 20px 0;
+            align-items: center;
+            height:150px;
+        }
+
+        #header .logo img {
+            float: left;
+        }
+
+        #header .logo h1 {
+            padding: 5px;
+            font-size: 30px;
+        }
+        #menu {
+            background-color: black;
+        }
+        .items-menu :hover{
+            background-color: rgb(57, 60, 62);
+            /* display: block; */
+        }
+        #menu ul {
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        
+        }
+        #menu ul li {
+            display: inline;
+            padding: 15px 20px;
+        }
+        #menu ul li a {
+            color: white;
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <h1>This is header</h1>
+        </div>
+    </div>
+
+    <div id="menu">
+        <ul class="items-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div class="main-content">
+
+        </div>
+
+    </div>
+</body>
+</html>

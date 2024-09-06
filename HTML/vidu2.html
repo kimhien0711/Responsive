@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            margin: 0;
+            background-color: white; /*Màu nền*/
+        }
+        .container{
+            position: relative;
+        }
+        .large-box{
+            width: 400px; /*Chiều rộng của hình khối lớn*/
+            height: 150px;
+            background-color: blue;
+            display: flex; /*Sử dụng flexbox để định vị các khối nhỏ nằm ngang*/
+            justify-content: space-between; /*Khoảng cách giữa các khối*/
+            padding: 20px; /*Khoảng cách từ bên ngoài đến các hình khối nhỏ*/
+            box-sizing: border-box; /*Đảm bảo padding không làm thay đổi kích thước các hình khối nhỏ*/
+        }
+        .small-box{
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            border-radius: 10px; /*Bo góc các hình khối nhỏ*/
+        }
+        .img{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="large-box">
+            <div class="small-box"></div>
+            <div class="small-box"></div>
+            <div class="small-box"></div>
+            <img src="https://images.app.goo.gl/62EP4LBkYT7PzNTH7" class="small-box">
+            <img src="https://images.app.goo.gl/K59sc7x9ZvMXZfxn6" class="small-box">
+            <img src="https://images.app.goo.gl/KQtqmUZexTPKipsdA" class="small-box">
+        </div>
+    </div>
+</body>
+</html>

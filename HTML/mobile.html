@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+        }
+        .mobile, .tablet, .pc{
+            display: block;
+        }
+        @media screen and (min-width: 1024px){
+        /* .mobile, .tablet{
+            display: none;
+        }  
+        .pc{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }   */
+           body{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+           }
+        }
+        @media screen and (max-width: 1023px){
+        .mobile, .pc{
+            display: none;
+        }
+
+        }
+        @media screen and (max-width: 767px){
+        .pc, .tablet{
+            display: none;
+        }    
+        }
+    </style>
+</head>
+<body>
+    <p class="moblie">Mobile</p>
+    <p class="tablet">Tablet</p>
+    <p class="pc">PC</p>
+</body>
+</html>

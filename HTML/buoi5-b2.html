@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Payment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+
+        .form-container {
+            width: 500px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        h3 {
+            color: green;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .form-group p {
+            display: block;
+            margin-bottom: 5px;
+            color: green;
+            font-weight: bold;
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group button {
+            width: 400px;
+            padding: 10px 10px 10px 30px;
+            margin: 0 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-group input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .form-group .radio-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-group i {
+            position: absolute;
+            left: 20px;
+            top: 30%;
+        }
+        .form-group2{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: px;
+        }
+        .form{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .payment-methods {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 20px;
+        }
+
+        .both{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+        }
+
+        button {
+            background-color: #5DC560;
+            color: white;
+            border: none; 
+            width: 2100%;
+            height: 30px;
+            justify-items: center;
+
+        }
+
+        button:hover {
+            background-color: #47A14A;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h3>Account</h3>
+        <div class="form-group">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Full Name">
+        </div>
+        <div class="form-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email Address">
+        </div>
+        <div class="form-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="both">
+            <div class="form-group">
+                <h3>Date of Birth</h3>
+                <div class="form-group2">
+                <input type="text" name="dob_day" placeholder="DD" style="width: 10%;" required>
+                <input type="text" name="dob_month" placeholder="MM" style="width: 10%;" required>
+                <input type="text" name="dob_year" placeholder="YYYY" style="width: 10%;" required>
+            </div>
+            </div>
+
+            <div class="form-group">
+                <h3>Gender</h3>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+            </div>
+    </div>
+        <h3>Payment Details</h3>
+        <div class="payment-methods">
+            <label><input type="radio" name="payment_method" value="credit_card" checked> Credit Card</label>
+            <label><input type="radio" name="payment_method" value="paypal"> PayPal</label>
+        </div>
+
+        <div class="form-group">
+            <i class="fas fa-credit-card"></i>
+            <input type="text" placeholder="Card Number">
+        </div>
+        <div class="form-group">
+            <i class="fas fa-key"></i>
+            <input type="text" placeholder="Card CVC">
+        </div>
+        <div class="form-group">
+            <div class="half">
+                <select>
+                    <option value="01">01 Jan</option>
+                    <option value="02">02 Feb</option>
+                    <option value="03">03 Mar</option>
+                </select>
+            </div>
+            <div class="half">
+                <select>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                </select>
+            </div>
+        </div>     
+        <button type="submit">Submit</button>
+   
+    </div>
+</body>
+</html>
